@@ -14,4 +14,6 @@ type Awaited1 = Awaited<String> // this only a string not a promise
 
 
 type PromiseUnionExample = Awaited<Promise<string | number>>
+ 
+
 

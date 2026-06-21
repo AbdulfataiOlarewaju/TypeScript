@@ -1,5 +1,5 @@
 // union means you are having a value, it can be either this or that
-// value -> this or that
+// value -> this or that 
 
  
 // primitve union
