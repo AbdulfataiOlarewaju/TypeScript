@@ -1,0 +1,15 @@
+{
+  "compilerOptions": { //add what kind of properties and rule i want to add
+    "target": "es2022",                     // specify ECMAScript target version
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "strict": true, // enable all strict type-checking options,
+    "noUncheckedIndexedAccess": true, // checks parallel related properties
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"] // file paths to be included in the compilation
+}
