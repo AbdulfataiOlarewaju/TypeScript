@@ -3,5 +3,5 @@ const ROLES = ["admin", "user", "operator"];
 function setRole(r) {
     console.log(r);
 }
-setRole("admin"); //work
+setRole("admin"); //works
 // setRole('test') //error

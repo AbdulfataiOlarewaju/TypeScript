@@ -42,3 +42,7 @@ type Count1 = Record<"like" | "views" | "shares", number>
 
 const c1 : Count = {whatever : 1}
 const c2 : Count1 = {like : 1, views:2, shares:3}
+
+console.log(c1)
+console.log(c2);
+;

@@ -15,3 +15,6 @@ const user2 = {
 };
 const c1 = { whatever: 1 };
 const c2 = { like: 1, views: 2, shares: 3 };
+console.log(c1);
+console.log(c2);
+;

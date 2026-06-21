@@ -1,13 +1,14 @@
 "use strict";
 // union means you are having a value, it can be either this or that
-// value -> this or that
+// value -> this or that 
 // primitve union
 function printId(id) {
-    // if(typeof id === "string"){
-    //     id.toUpperCase()
-    // } else {
-    //     id.toFixed(2);
-    // }
+    if (typeof id === "string") {
+        id.toUpperCase();
+    }
+    else {
+        id.toFixed(2);
+    }
 }
 function describeUser(user) {
     if (user.role === 'Admin') {
@@ -27,6 +28,6 @@ function describeUserWithInOperator(user) {
     }
 }
 // array of unions and union of arrays
-const arrOfUnion = ["a", 1, 2, 'b']; //it can be arranged any how because it is not a tupple
+const arrOfUnion = ["a", 1, 2, 'b']; //it can be arranged any how because it is not a tupple okay
 const unionOfArrays = Math.random() > 0.1 ? ["x", "y"] : [1, 2];
 // unionOfArrays.push("z") you can't push bcause it does not know wheather it is a string or number

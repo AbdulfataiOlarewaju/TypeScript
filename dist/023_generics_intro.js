@@ -8,7 +8,7 @@ function id(x) {
     return x;
 }
 // infers T meaning if i try to call id(5), it understands that T is number or if call id('hello') then T is string
-// there is no need of passing like <number>(5)
+// there is no need of passing like <number>(5)  
 const xyzz = id(5);
 console.log(xyzz + 1);
 console.log(id(['abdulfatai']));
