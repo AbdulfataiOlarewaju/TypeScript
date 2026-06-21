@@ -1,7 +1,7 @@
 
 
 // understand what is "type parameter" <T>
-// how to ts infers <T> from  your argument automatically
+// how ts infers <T> from  your argument automatically
 
 
 // generics is function where the types are blanks and we can fill it later
@@ -15,7 +15,7 @@ function id<T>(x:T) : T {
 }
 
 // infers T meaning if i try to call id(5), it understands that T is number or if call id('hello') then T is string
-// there is no need of passing like <number>(5)
+// there is no need of passing like <number>(5)  
 
 
 

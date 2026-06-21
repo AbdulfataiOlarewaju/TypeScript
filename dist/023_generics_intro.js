@@ -1,6 +1,6 @@
 "use strict";
 // understand what is "type parameter" <T>
-// how to ts infers <T> from  your argument automatically
+// how ts infers <T> from  your argument automatically
 // generics is function where the types are blanks and we can fill it later
 //  <T> is a placeholder for type, which will be filled in when you call this function
 // ts will try to understand what T should be based on the arguments passed into the function

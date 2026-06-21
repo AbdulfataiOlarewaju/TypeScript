@@ -57,4 +57,8 @@ function info(X) {
         return new Error("Error");
     }
 }
-console.log(info([1, 2, 3, 4]), info(new Date()), info(new Error('error message')), info({ name: 'abdul', age: 25 }));
+console.log(
+// info([1,2,3,4]),
+// info(new Date()),
+// info(new Error('error message')),
+info({ name: 'abdul', age: 25 }));

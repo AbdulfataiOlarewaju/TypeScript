@@ -1,6 +1,6 @@
 "use strict";
 // returnType<F> // tell what we are the things we are returing
-// Paarameter<F> // tells what aparameter we are recieving
+// Paarameter<F> // tells what parameter we are recieving
 // InstanceType<Ctor>
 // ContructorParameters<C>
 function ExtractUserInfo(id, isExtraInfo = false) {
@@ -13,6 +13,7 @@ function ExtractUserInfo(id, isExtraInfo = false) {
 const argsInfo = ['u1', true];
 const resultInfo = ExtractUserInfo(...argsInfo);
 // console.log(resultInfo);
+console.log(argsInfo);
 class PersionN1 {
     name;
     age;

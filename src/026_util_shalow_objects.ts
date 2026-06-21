@@ -51,26 +51,27 @@ const readonlyUser: ReadonlyUserN10 = {
 
 type PublicUserN10 = Pick<User10, 'id' | 'name'>
 
-const publicUser: PublicUserN10 = { id: 'uS', name: 'name' }
+const publicUser: PublicUserN10 = { id: 'uS', name: 'name' } //{ id: 'uS', name: 'name', email } -> gives error because you did't pick email
 
 // Omit<T,K>  - > remove some keys
-type UserWithoutEmail = Omit<User10, 'email'>
+type UserWithoutEmail10 = Omit<User10, 'email'>
 
-const OmitUserN10: UserWithoutEmail = {
+const OmitUserN10: UserWithoutEmail10 = {
     id: 'u4',
     name: 'name4',
     address: { line1: 'line', city: 'ci' },
 }
 
-// OmitUserN10.email = 'email@g'
+// OmitUserN10.email = 'email@g' error because you have already remove email
 
 
-// Record<K, V>  
+// Record<K, V>  keys and values
 type RoleK = 'admin' | 'user' | 'editor'
 
 type RoleCheck = Record<RoleK, User10>
 
-// we can do whenever it is admin, i want to have so so so properties
+// we can do whenever it is admin, i want to have do so so properties
+// we can do whenever it is user, i want to have do so so properties
 const dirN10: RoleCheck = {
     admin: { id: 'us10', name: 'admin', address: { line1: 'line', city: 'ci' }, },
     user: { id: 'us10', name: 'user', address: { line1: 'line', city: 'ci' }, email: 'user@gamil.com' },

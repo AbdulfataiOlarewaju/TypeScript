@@ -18,13 +18,14 @@ const readonlyUser = {
     name: 'name',
     address: { line1: 'line', city: 'ci' },
 };
-const publicUser = { id: 'uS', name: 'name' };
+const publicUser = { id: 'uS', name: 'name' }; //{ id: 'uS', name: 'name', email } -> gives error because you did't pick email
 const OmitUserN10 = {
     id: 'u4',
     name: 'name4',
     address: { line1: 'line', city: 'ci' },
 };
-// we can do whenever it is admin, i want to have so so so properties
+// we can do whenever it is admin, i want to have do so so properties
+// we can do whenever it is user, i want to have do so so properties
 const dirN10 = {
     admin: { id: 'us10', name: 'admin', address: { line1: 'line', city: 'ci' }, },
     user: { id: 'us10', name: 'user', address: { line1: 'line', city: 'ci' }, email: 'user@gamil.com' },

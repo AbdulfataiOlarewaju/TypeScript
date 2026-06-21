@@ -13,7 +13,7 @@ couters['Shares'] = 5
 
 // alternative way
 
-type Metrics = Record<'Like' | 'views' | 'comments' | 'shares', number> // tight and safer
+type Metrics = Record<'Like' | 'views' | 'comments' | 'shares', number> // tight and safer. used when we have finite number of keys
 
 const metrics:Metrics = {
     Like: 1,
@@ -22,7 +22,7 @@ const metrics:Metrics = {
     shares : 50
 }
 
-
+// when you have something called dynamic keys at run time, so in that case you use  map instead of record
 const priceMap = new Map<string, number>()
 
 priceMap.set('likes', 1)

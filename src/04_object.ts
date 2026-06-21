@@ -36,7 +36,7 @@ type user3 = {eamil :string | undefined}
 
 
 
-type Count = {[k: string]:number} //index signature
+type Count = {[k: string]:number} //index signature -> key is a string but the value is a number
 type Count1 = Record<"like" | "views" | "shares", number>
 
 

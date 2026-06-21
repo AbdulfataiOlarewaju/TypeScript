@@ -11,5 +11,5 @@ function setRole(r:Role){
     
 }
 
-setRole("admin") //work
+setRole("admin") //works
 // setRole('test') //error

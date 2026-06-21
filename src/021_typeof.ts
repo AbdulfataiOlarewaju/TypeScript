@@ -66,9 +66,9 @@ function info(X:unknown){
 }
 
 console.log(
-    info([1,2,3,4]),
-    info(new Date()),
-    info(new Error('error message')),
+    // info([1,2,3,4]),
+    // info(new Date()),
+    // info(new Error('error message')),
     info({name:'abdul',age:25})
 );
 

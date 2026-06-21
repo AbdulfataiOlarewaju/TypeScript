@@ -9,6 +9,7 @@ const metrics = {
     comments: 6,
     shares: 50
 };
+// when you have something called dynamic keys at run time, so in that case you use  map instead of record
 const priceMap = new Map();
 priceMap.set('likes', 1);
 const lm = {};

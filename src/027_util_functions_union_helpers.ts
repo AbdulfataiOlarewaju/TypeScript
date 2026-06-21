@@ -1,7 +1,7 @@
 
 
 // returnType<F> // tell what we are the things we are returing
-// Paarameter<F> // tells what aparameter we are recieving
+// Paarameter<F> // tells what parameter we are recieving
 // InstanceType<Ctor>
 // ContructorParameters<C>
 
@@ -23,6 +23,8 @@ const resultInfo : GetUserReturnInfo = ExtractUserInfo(...argsInfo)
 
 
 // console.log(resultInfo);
+console.log(argsInfo);
+
 
 
 class PersionN1 {

@@ -16,13 +16,16 @@ function decribeUserExample(u:UserExample){
 console.log(decribeUserExample({role : 'Admin', permission : ['read', 'write']}));
 console.log(decribeUserExample({role: 'User', expireAt:new Date()}));
 
-// main idea  is to avoid runtimes crashes
+
+// optional_nullish. the main idea  is to avoid runtimes crashes
 // ?? and ||
-// obj?.a
+// obj?.a -> called optional chaining
+
+// ?? is nullish and || is called forshill
 
 type ProfileN3 = {
     name : string;
-    contact?: {email?:string};
+    contact?: {email?:string}; // optional chain
 }
 
 const PIN2:ProfileN3 = {
@@ -36,7 +39,7 @@ const PIN3 : ProfileN3 ={
 }
 const email1N3 = PIN2.contact?.email
 const email2N3 = PIN3.contact?.email
-
+//  if you direectly call like -> PIN2.contact.email without ?, it can crash because it optional properti and it is possible you dont have optional property at all
 
 // ?? -> uses right hand default only when left hand side is null or undefined
 // || -> uses the default when the left hand side is falsy (null,undefined,false,'', 0 NaN)

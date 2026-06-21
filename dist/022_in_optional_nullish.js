@@ -20,6 +20,7 @@ const PIN3 = {
 };
 const email1N3 = PIN2.contact?.email;
 const email2N3 = PIN3.contact?.email;
+//  if you direectly call like -> PIN2.contact.email without ?, it can crash because it optional properti and it is possible you dont have optional property at all
 // ?? -> uses right hand default only when left hand side is null or undefined
 // || -> uses the default when the left hand side is falsy (null,undefined,false,'', 0 NaN)
 const countFromServer = 0;

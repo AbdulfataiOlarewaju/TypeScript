@@ -7,7 +7,7 @@
 
 
 
-// type-> more genral  -> used for objects , functions, unions interfaces, tuples etc.
+// type-> more genral  -> used for objects , functions, unions, interfaces, tuples etc.
 //it can not be reopened like interface -> no merging
 
 

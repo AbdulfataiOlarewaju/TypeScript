@@ -28,7 +28,7 @@ function handleEvent2(e:ActionN2){
     
 }
 
-// handleEvent2('create')
+handleEvent2('create')
 
 type MayBeNumber = number | null | undefined;
 type CleanNumber = NonNullable<MayBeNumber>; //keep only number
@@ -39,4 +39,4 @@ function sqaure(num : CleanNumber){
 
 
 sqaure(10)
-// sqaure(null) //error
+// sqaure(null) //error 
